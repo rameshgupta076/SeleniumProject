@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Selenium Project]">
+  <listeners>
+    <listener class-name="com.demo.utilities.Reporting"/>
+  </listeners>
+  <test thread-count="5" name="Banking App(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.demo.Testcases.TC_002_DDT_LoginPage">
+        <methods>
+          <include name="LoginDDT"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.demo.Testcases.TC_002_DDT_LoginPage -->
+    </classes>
+  </test> <!-- Banking App(failed) -->
+</suite> <!-- Failed suite [Selenium Project] -->

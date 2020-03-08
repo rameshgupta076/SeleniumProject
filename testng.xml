@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Selenium Project" parallel="false">
+  
+  <listeners>
+  <listener class-name="com.demo.utilities.Reporting" />
+    </listeners>
+  <test  name="Banking App">
+<parameter name ="browser" value="firefox" />  
+
+    <classes>
+        <class name="com.demo.Testcases.LoginTest"/>
+       <!--   <class name="com.demo.Testcases.TC_002_DDT_LoginPage"/> -->
+        
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
